@@ -7,20 +7,20 @@
     Customizable Settings
     ********************* */
 
-led_diameter_mm=2; // Diameter in mm
+led_diameter_mm=3; // Diameter in mm
 
 led_cols=4; // Define the grid of LEDs.
 led_rows=2; // Typically 1 row?
- 
+
 // How far from the panel do you want the
 // LEDs to protrude?
-led_protrusion_mm = 2;
+led_protrusion_mm = 2.2;
 
 // Spacing between LEDs, as measured from
 // center-center or same-edge to same-edge.
 led_spacing_mm = 10; 
 
-jig_thickness_mm = 6; // How thick is the jig/platform?
+jig_thickness_mm = 3; // How thick is the jig/platform?
 // Max width of jig in mm NOT IMPLEMENTED
 max_width_mm = 40;
 
@@ -28,8 +28,8 @@ max_width_mm = 40;
 /* **************************
    End Settings, Begin Script
    ************************** */
- 
-module led(){
+
+module led(){  // Simple LED - (Hemi)sphere on the end of a column
     translate([0,0,(led_diameter_mm/2)-led_protrusion_mm]) {
         union() {
             sphere(d = led_diameter_mm);
@@ -58,7 +58,7 @@ module support_platform() {
         cube([size_x, size_y, jig_thickness_mm]);
 }
 
-// Make the thing!
+// Make the thing - the "LED Strip" carved (difference) from the platform
 difference() {
     support_platform(); 
         led_strip();
