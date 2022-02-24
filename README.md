@@ -7,5 +7,16 @@ to help ensure the LEDs are installed / soldered with a consistent depth.
 
 ## Status
 
-Nothing to see here, yet!
+This should work just fine directly in OpenSCAD! It has not yet been tested on
+Thingiverse - some customization is still needed.
+
+## TODO
+
+- Add appropriate metadata for Thingiverse customizer
+- Take screenshots
+- Improve documentation
+  - Better explanation of purpose
+  - Photos or videos of use
+- Add functionality
+  - Legs?
 
