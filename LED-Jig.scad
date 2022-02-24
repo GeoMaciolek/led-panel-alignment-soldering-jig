@@ -18,7 +18,7 @@ led_protrusion_mm = 2.2;
 
 // Spacing between LEDs, as measured from
 // center-center or same-edge to same-edge.
-led_spacing_mm = 10; 
+led_spacing_mm = 10.16; // 10.16mm = 0.400"
 
 jig_thickness_mm = 3; // How thick is the jig/platform?
 
