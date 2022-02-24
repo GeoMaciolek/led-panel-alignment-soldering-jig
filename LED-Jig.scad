@@ -7,7 +7,7 @@
     Customizable Settings
     ********************* */
 
-led_diameter_mm=10; // Diameter in mm
+led_diameter_mm=2; // Diameter in mm
 
 led_cols=5; // Define the grid of LEDs.
 led_rows=2; // Typically 1 row?
@@ -34,7 +34,20 @@ module led(){
     }
 }
 
-led();
+module led_strip() {
+    // Set y_count to `led_rows` if valid, else 1
+    y_count = (led_rows > 0) ? led_rows:1;
+    x_count = (led_cols > 0) ? led_cols:1;
+    for (y_index=[0:1:y_count]){        
+        for (x_index=[0:1:x_count]){
+            translate([x_index * led_spacing_mm, y_index * led_spacing_mm, 0])
+                led();
+        }
+    }
+}
+
+// led();
+led_strip();
 
 $fa = 1;
 $fs = 0.4;
