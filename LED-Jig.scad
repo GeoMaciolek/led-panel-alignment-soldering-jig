@@ -21,8 +21,11 @@ led_protrusion_mm = 2.2;
 led_spacing_mm = 10; 
 
 jig_thickness_mm = 3; // How thick is the jig/platform?
-// Max width of jig in mm NOT IMPLEMENTED
-max_width_mm = 40;
+
+// Border settings
+automatic_border_size = false; // If true, ignore the following:
+jig_outer_border_mm = 5; // How much space around the edge?
+
 
 
 /* **************************
@@ -48,7 +51,7 @@ module led_strip() {
 
 module support_platform() {
     // Platform size based on LED spacing, plus one (as a guess)
-    edge_offset = led_spacing_mm * 0.5;
+    edge_offset = (automatic_border_size) ? (led_spacing_mm * 0.5):(jig_outer_border_mm + led_diameter_mm / 2);
     size_x = (led_spacing_mm * (led_cols - 1))+ (edge_offset * 2);
     size_y = (led_spacing_mm * (led_rows - 1)) + (edge_offset * 2);
     
