@@ -33,7 +33,7 @@ led_protrusion_mm = 1.5;
 jig_thickness_mm = 3; // 0.1
 
 // Automatically pick the jig's outer border size
-automatic_border_size = false;
+automatic_border_size = 0; // [0:false,1:true]
 
 // Jig's outer border/edge size (Ignored if automatic_border_size is used)
 jig_outer_border_mm = 5.0; // 0.1
