@@ -7,25 +7,36 @@
     Customizable Settings
     ********************* */
 
-led_diameter_mm=3; // Diameter in mm
+/* [Component Specs] */
 
-led_cols=4; // Define the grid of LEDs.
-led_rows=2; // Typically 1 row?
+// LED diameter (mm)
+led_diameter_mm=3; // 0.1
 
-// How far from the panel do you want the
-// LEDs to protrude?
-led_protrusion_mm = 2.2;
+/* [Layout] */
 
-// Spacing between LEDs, as measured from
-// center-center or same-edge to same-edge.
-led_spacing_mm = 10.16; // 10.16mm = 0.400"
+// Num. of LEDs in column / "across"
+led_cols=3;
 
-jig_thickness_mm = 3; // How thick is the jig/platform?
+// Num. of LED rows (Often 1)
+led_rows=1; 
 
-// Border settings
-automatic_border_size = false; // If true, ignore the following:
-jig_outer_border_mm = 5; // How much space around the edge?
+// Spacing between LEDs (mm), measured center-center or same-edge to same-edge. 10.16mm=0.400"
+led_spacing_mm = 10.16; 
 
+// How far from the panel the LEDs should protrude (Suggestion: 1/2 of led_diameter_mm)
+led_protrusion_mm = 1.5;
+
+
+/* [Jig Size] */
+
+// How thick is the jig/platform?
+jig_thickness_mm = 3; // 0.1
+
+// Automatically pick the jig's outer border size
+automatic_border_size = false;
+
+// Jig's outer border/edge size (Ignored if automatic_border_size is used)
+jig_outer_border_mm = 5.0; // 0.1
 
 
 /* **************************
