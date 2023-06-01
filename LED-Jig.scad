@@ -18,7 +18,7 @@ led_diameter_mm=3; // 0.1
 led_cols=3;
 
 // Num. of LED rows (Often 1)
-led_rows=1; 
+led_rows=1;
 
 // Spacing between LEDs (mm), measured center-center or same-edge to same-edge. 10.16mm=0.400"
 led_spacing_mm = 10.16; 
