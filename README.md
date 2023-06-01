@@ -2,8 +2,9 @@
 
 ## Overview
 
-The LED Panel Alignment Soldering Jig is a 3D-Printable "jig" to hold LEDs in place or against a panel,
-to help ensure the LEDs are installed / soldered with a consistent depth.
+The LED Panel Alignment Soldering Jig is a 3D-Printable "jig" to hold LEDs in
+place or against a panel, to help ensure the LEDs are installed / soldered with
+a consistent depth.
 
 ## Details
 
@@ -14,6 +15,9 @@ LEDs - often a row or grid - to a panel. Getting this spacing consistent can be
 tricky; this jig is designed to be placed up against the panel (held with a
 spacer, or tape), allowing the LEDs to nestle into it, at the exact depth
 specified!
+
+See also the
+[Thingiverse Customizable object](https://www.thingiverse.com/thing:6056979)
 
 ### Screenshots
 
@@ -54,5 +58,5 @@ This should work fine in OpenSCAD! It has not yet been tested on Thingiverse.
 
 ## Links
 
-* [Official / Original Github reposistory](https://github.com/GeoMaciolek/led-panel-alignment-soldering-jig)
-* Thingiverse Customizable object
+- [Official / Original Github reposistory](https://github.com/GeoMaciolek/led-panel-alignment-soldering-jig)
+- [Thingiverse Customizable object](https://www.thingiverse.com/thing:6056979)
