@@ -51,7 +51,7 @@ These are some LED spacings I have used. Please submit spacings you encounter!
 | Inches | mm    | Examples                   | Notes                           |
 |--------|-------|----------------------------|---------------------------------|
 | 0.400" | 10.16 | [Tesseract Modular Sweet Sixteen Faderbank](https://www.tesseractmodular.com/eurorack-modules/sweet-sixteen-mkii) ||
-| 0.500" | 12.70 | [Westlicht PER\|FORMER Sequencer](https://westlicht.github.io/performer/) | aka Westlicht Performer|
+| 0.500" | 12.7 | [Westlicht PER\|FORMER Sequencer](https://westlicht.github.io/performer/) | aka Westlicht Performer|
 
 ## Status
 
