@@ -2,10 +2,19 @@
 
 ## Overview
 
-The LED Jig is a 3d printable "jig" to hold LEDs in place or against a panel,
+The LED Jig is a 3D-Printable "jig" to hold LEDs in place or against a panel,
 to help ensure the LEDs are installed / soldered with a consistent depth.
 
 ## Details
+
+### Screenshots
+
+OpenSCAD preview image, showing the customizer settiings.
+![OpenSCAD Screenshot showing customizer settings](images/jed-jig-openscad-poly-and-settings.png?raw=True)
+
+Here, we have increased `led_protrusion_mm` in a wireframe view to illustrate
+how these jigs work.
+![Screenshot showing "deeper" LEDs (for LEDs spaced far from the panel)](images/jed-jig-openscad-wireframe-deeper.png?raw=True)
 
 ### Settings
 
@@ -25,16 +34,12 @@ to help ensure the LEDs are installed / soldered with a consistent depth.
 
 ## Status
 
-This should work just fine directly in OpenSCAD! It has not yet been tested on
-Thingiverse - some customization is still needed.
+This should work fine in OpenSCAD! It has not yet been tested on Thingiverse.
 
 ## TODO
 
-- Add appropriate metadata for Thingiverse customizer
-- Take screenshots
 - Improve documentation
   - Better explanation of purpose
   - Photos or videos of use
 - Add functionality
-  - Legs?
-
+  - Legs for "taller" jigs?
